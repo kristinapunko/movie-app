@@ -7,7 +7,7 @@ import { Alert, Image, Text, TouchableOpacity, View } from 'react-native';
 interface MovieCardProps {
   movie: Movie;
   savedMovie?: SavedMovie[];
-  user?: { $id: string }; // або точний тип користувача
+  user?: { $id: string }; 
 }
 
 const MovieCard: React.FC<MovieCardProps> = ({ movie,user, savedMovie }) => {
@@ -39,7 +39,7 @@ const MovieCard: React.FC<MovieCardProps> = ({ movie,user, savedMovie }) => {
       }
     } catch (error) {
       console.error('Save error:', error);
-      Alert.alert('Failed to save movie.');
+      Alert.alert('Failed to save movie.')
     }
   };
 
